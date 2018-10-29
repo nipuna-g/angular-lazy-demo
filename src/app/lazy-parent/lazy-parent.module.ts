@@ -1,3 +1,4 @@
+import { LazyService } from './lazy.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,6 +9,9 @@ import { LazyParentRoutingModule } from './lazy-parent-routing.module';
     CommonModule,
     LazyParentRoutingModule
   ],
-  declarations: []
+  declarations: [],
+  providers: [
+    LazyService,
+  ]
 })
 export class LazyParentModule { }

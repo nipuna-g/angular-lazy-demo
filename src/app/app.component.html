@@ -1,16 +1,14 @@
-<p>
-    Lazy loaded modules
-</p>
+<h2>Lazy loaded modules</h2>
 
-<ul>
-  <li>
-    <a routerLink="/">Home</a>
+<ul class="navigation">
+  <li routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+    <a>Eager Loaded Home</a>
   </li>
-  <li>
-    <a routerLink="/lazy-parent/a">Lazy Child A</a>
+  <li routerLink="/lazy-parent/a" routerLinkActive="active-link">
+    <a>Lazy Child A</a>
   </li>
-  <li>
-    <a routerLink="/lazy-parent/b">Lazy Child B</a>
+  <li routerLink="/lazy-parent/b" routerLinkActive="active-link">
+    <a>Lazy Child B</a>
   </li>
 </ul>
 

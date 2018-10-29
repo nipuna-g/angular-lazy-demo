@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    padding: .5em;
+    border: 1px solid #aaa;
+    margin-right: 1em;
+    border-radius: 7px;
+}
+
+.navigation li:hover {
+    border: 1px solid #777;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.navigation li.active-link {
+    background: #ddd;
+}

@@ -1,3 +1,4 @@
+import { LazyService } from './../../../lazy-parent/lazy.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-    console.log('a onInit');
+  get count() {
+    return this.lazyService.count;
   }
 
+  increaseCount() {
+    this.lazyService.increaseCount();
+  }
+
+  constructor(private lazyService: LazyService) {
+
+  }
+
+  ngOnInit() {
+  }
 }
